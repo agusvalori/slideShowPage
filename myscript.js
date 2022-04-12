@@ -7,7 +7,7 @@ window.addEventListener("load", function () {
   imagenes[1] = "archivos/image/image2.jpg";
   imagenes[2] = "archivos/image/image3.jpg";
   imagenes[3] = "archivos/image/image4.jpg";
-  imagenes[5] = "archivos/image/image4.jpg";
+  imagenes[4] = "archivos/image/image5.jpg";
   this.document.slider.src = imagenes[selectSlider];
 });
 
@@ -18,12 +18,9 @@ const desplazarDerecha = () => {
   } else {
     selectSlider = 0;
   }
+  this.document.slider.src = imagenes[selectSlider];
 };
 
-/* 
-al cambiar el index del arreglo donde tengo guardadas las rutas de las imagenes no me cambia las imagenes.
-
-*/
 
 const desplazarIzquierda = () => {
   console.log("Tendria que desplazar a la izquierda: ", selectSlider);
@@ -32,4 +29,5 @@ const desplazarIzquierda = () => {
   } else {
     selectSlider = 6;
   }
+  this.document.slider.src = imagenes[selectSlider];
 };
