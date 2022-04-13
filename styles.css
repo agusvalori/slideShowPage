@@ -2,3 +2,56 @@
     margin: 0px;
     padding: 0px;
 }
+
+.sectionSlider{
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+
+
+}
+.sliderContenedor{    
+    width: 90vw;
+    padding: 15px 0px;
+
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-items: center;
+
+    border: solid gray;
+    border-radius: 15px;
+    box-shadow: 5px 5px 20px 5px;
+
+    
+
+}
+
+.sliderImagen{
+    border-radius: 15px;
+
+}
+
+
+.btnDesplazar{
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    font-size: 30px;    
+}
+
+.btnDesplazar:hover{
+    background-color: rgb(92, 88, 88);
+    color: orange;
+}
+
+.btnDesplazarIzq{
+
+}
+
+.btnDespazlarDer{
+    
+}

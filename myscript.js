@@ -8,27 +8,30 @@ window.addEventListener("load", function () {
   imagenes[2] = "archivos/image/image3.jpg";
   imagenes[3] = "archivos/image/image4.jpg";
   imagenes[4] = "archivos/image/image5.jpg";
-  this.document.sliderImg.src = imagenes[selectSlider];
+  cambiarImagen();  
 });
 
+const cambiarImagen=()=>{
+  this.document.sliderImg.src = imagenes[selectSlider];  
+}
+
 const desplazarDerecha = () => {
-  console.log("Tendria que desplazar a la derecha: ", selectSlider);
   if (selectSlider < imagenes.length - 1) {
     selectSlider++;
     
   } else {
     selectSlider = 0;
   }
-  this.document.sliderImg.src = imagenes[selectSlider];
+  cambiarImagen();
+  
 };
 
 
-const desplazarIzquierda = () => {
-  console.log("Tendria que desplazar a la izquierda: ", selectSlider);
+const desplazarIzquierda = () => {  
   if (selectSlider > 0) {
     selectSlider--;
   } else {
-    selectSlider = 6;
+    selectSlider = imagenes.length - 1;
   }
-  this.document.sliderImg.src = imagenes[selectSlider];
+  cambiarImagen();
 };

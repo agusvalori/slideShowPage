@@ -1,26 +1,34 @@
 <!DOCTYPE html>
 <html lang="esp">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="./styles.css" />
     <title>Slide Show Page</title>
-</head>
-<body>
-    <header>
-
-    </header>
-    <section>
-        <div>
-            <img name="sliderImg" width="500px"  height="400"/>
-        </div>
-        <div>
-            <button onClick="desplazarIzquierda()" >Izquierda</button>
-            <button onClick="desplazarDerecha()" >Derecha</button>
-        </div>
+  </head>
+  <body>
+    <header></header>
+    <section class="sectionSlider">
+      <div class="sliderContenedor">
+        <button
+          id="btnDesplazarIzq"
+          onClick="desplazarIzquierda()"
+          class="btnDesplazar btnDesplazarIzq"
+        >
+          <
+        </button>
+        <img class="sliderImagen" name="sliderImg" width="500px" height="400" />
+        <button
+          id="btnDesplazarDer"
+          onClick="desplazarDerecha()"
+          class="btnDesplazar btnDesplazarIzq"
+        >
+          >
+        </button>
+      </div>
     </section>
-    
+
     <script src="myscript.js"></script>
-</body>
+  </body>
 </html>
